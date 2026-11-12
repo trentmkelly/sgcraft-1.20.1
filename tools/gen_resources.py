@@ -306,7 +306,7 @@ for dim in ("overworld", "nether", "end"):
         "type": "forge:add_features", "biomes": f"#minecraft:is_{dim}",
         "features": f"{NS}:naquadah_ore", "step": "underground_ores"})
 write(f"{D}/{NS}/forge/biome_modifier/pyramid_stargate.json", {
-    "type": "forge:add_features", "biomes": "#minecraft:has_structure/desert_pyramid",
+    "type": "forge:add_features", "biomes": "#minecraft:is_overworld",
     "features": f"{NS}:pyramid_stargate", "step": "top_layer_modification"})
 
 print("ok")

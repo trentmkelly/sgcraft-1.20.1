@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#minecraft:has_structure/desert_pyramid",
+  "biomes": "#minecraft:is_overworld",
   "features": "sgcraft:pyramid_stargate",
   "step": "top_layer_modification"
 }
