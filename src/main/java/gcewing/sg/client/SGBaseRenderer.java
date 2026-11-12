@@ -3,6 +3,7 @@ package gcewing.sg.client;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;
+import gcewing.sg.IrisState;
 import gcewing.sg.SGConfig;
 import gcewing.sg.SGCraft;
 import gcewing.sg.block.entity.SGBaseBlockEntity;
@@ -115,7 +116,8 @@ public class SGBaseRenderer implements BlockEntityRenderer<SGBaseBlockEntity> {
         renderChevrons(te, pose, q);
         if (te.hasIrisUpgrade)
             renderIris(te, t, pose, buffers, light);
-        if (te.isConnected())
+        // A shut iris hides the event horizon; without this check it would show through from behind.
+        if (te.isConnected() && !(te.hasIrisUpgrade && te.irisState == IrisState.Closed))
             renderEventHorizon(te, t, pose, buffers, light);
         pose.popPose();
     }

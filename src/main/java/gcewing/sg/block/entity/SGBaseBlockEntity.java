@@ -944,7 +944,7 @@ public class SGBaseBlockEntity extends SyncedBlockEntity implements MenuProvider
 
     public void onNeighborBlockChange() {
         if (!level.isClientSide) {
-            boolean newInput = level.hasNeighborSignal(worldPosition);
+            boolean newInput = isExternallyPowered();
             if (redstoneInput != newInput) {
                 redstoneInput = newInput;
                 setChanged();
@@ -954,6 +954,27 @@ public class SGBaseBlockEntity extends SyncedBlockEntity implements MenuProvider
                     openIris();
             }
         }
+    }
+
+    /**
+     * Redstone input from anything other than this block's own output (port of Greg's
+     * blockIsGettingExternallyPowered). While a gate is active it emits a signal itself, and
+     * vanilla's hasNeighborSignal would see that signal reflected back through adjacent blocks.
+     */
+    boolean isExternallyPowered() {
+        for (Direction dir : Direction.values()) {
+            BlockPos npos = worldPosition.relative(dir);
+            BlockState ns = level.getBlockState(npos);
+            if (ns.is(getBlockState().getBlock()))
+                continue;
+            if (ns.getSignal(level, npos, dir) > 0)
+                return true;
+            if (ns.isRedstoneConductor(level, npos))
+                for (Direction dir2 : Direction.values())
+                    if (dir2 != dir.getOpposite() && level.getDirectSignal(npos.relative(dir2), dir2) > 0)
+                        return true;
+        }
+        return false;
     }
 
     void updateIrisEntity() {
