@@ -44,6 +44,8 @@ Minecraft or mod-ecosystem changes since then.
 `./gradlew build` produces `build/libs/SGCraft-<version>.jar`. Development runs
 (`./gradlew runClient` / `runServer`) use `../dev-run`, outside the repository.
 
+Port done entirely by Claude Opus 5.5.
+
 ## Licence
 
 The original SG Craft is free software: "You are free to do whatever you want with it."
