@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CrC",
+    "NeN",
+    "ScS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:cut_sandstone"
+    },
+    "N": {
+      "tag": "forge:ingots/naquadah_alloy"
+    },
+    "C": {
+      "item": "minecraft:chiseled_sandstone"
+    },
+    "r": {
+      "item": "minecraft:redstone"
+    },
+    "e": {
+      "item": "minecraft:ender_eye"
+    },
+    "c": {
+      "item": "sgcraft:sg_core_crystal"
+    }
+  },
+  "result": {
+    "item": "sgcraft:stargate_base",
+    "count": 1
+  }
+}

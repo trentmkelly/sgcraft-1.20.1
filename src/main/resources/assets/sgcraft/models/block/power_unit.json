@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "sgcraft:block/power_unit_side",
+    "down": "sgcraft:block/power_unit_bottom",
+    "up": "sgcraft:block/power_unit_top",
+    "north": "sgcraft:block/power_unit_side",
+    "south": "sgcraft:block/power_unit_side",
+    "west": "sgcraft:block/power_unit_side",
+    "east": "sgcraft:block/power_unit_side"
+  }
+}

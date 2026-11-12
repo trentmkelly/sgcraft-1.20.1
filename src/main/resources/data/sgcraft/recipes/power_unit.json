@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "cgc",
+    "gIg",
+    "crc"
+  ],
+  "key": {
+    "c": {
+      "item": "sgcraft:capacitor"
+    },
+    "g": {
+      "tag": "forge:ingots/gold"
+    },
+    "I": {
+      "tag": "forge:storage_blocks/iron"
+    },
+    "r": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "sgcraft:power_unit",
+    "count": 1
+  }
+}

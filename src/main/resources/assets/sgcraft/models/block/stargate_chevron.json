@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "sgcraft:block/stargate_chevron",
+    "down": "sgcraft:block/stargate_block",
+    "up": "sgcraft:block/stargate_block",
+    "north": "sgcraft:block/stargate_chevron",
+    "south": "sgcraft:block/stargate_chevron",
+    "west": "sgcraft:block/stargate_chevron",
+    "east": "sgcraft:block/stargate_chevron"
+  }
+}

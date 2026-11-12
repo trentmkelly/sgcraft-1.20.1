@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CCC",
+    "NNN",
+    "SSS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:cut_sandstone"
+    },
+    "N": {
+      "tag": "forge:ingots/naquadah_alloy"
+    },
+    "C": {
+      "item": "minecraft:chiseled_sandstone"
+    }
+  },
+  "result": {
+    "item": "sgcraft:stargate_ring",
+    "count": 1
+  }
+}

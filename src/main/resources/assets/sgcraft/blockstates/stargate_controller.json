@@ -1,0 +1,49 @@
+{
+  "variants": {
+    "button=off,facing=north": {
+      "model": "sgcraft:block/stargate_controller_off"
+    },
+    "button=idle,facing=north": {
+      "model": "sgcraft:block/stargate_controller_idle"
+    },
+    "button=lit,facing=north": {
+      "model": "sgcraft:block/stargate_controller_lit"
+    },
+    "button=off,facing=east": {
+      "model": "sgcraft:block/stargate_controller_off",
+      "y": 90
+    },
+    "button=idle,facing=east": {
+      "model": "sgcraft:block/stargate_controller_idle",
+      "y": 90
+    },
+    "button=lit,facing=east": {
+      "model": "sgcraft:block/stargate_controller_lit",
+      "y": 90
+    },
+    "button=off,facing=south": {
+      "model": "sgcraft:block/stargate_controller_off",
+      "y": 180
+    },
+    "button=idle,facing=south": {
+      "model": "sgcraft:block/stargate_controller_idle",
+      "y": 180
+    },
+    "button=lit,facing=south": {
+      "model": "sgcraft:block/stargate_controller_lit",
+      "y": 180
+    },
+    "button=off,facing=west": {
+      "model": "sgcraft:block/stargate_controller_off",
+      "y": 270
+    },
+    "button=idle,facing=west": {
+      "model": "sgcraft:block/stargate_controller_idle",
+      "y": 270
+    },
+    "button=lit,facing=west": {
+      "model": "sgcraft:block/stargate_controller_lit",
+      "y": 270
+    }
+  }
+}

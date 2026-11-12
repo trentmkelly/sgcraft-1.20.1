@@ -16,7 +16,8 @@ minecraft {
 
     runs {
         configureEach {
-            workingDir.convention layout.projectDirectory.dir('run')
+            // Dev runs live outside the repo
+            workingDir.convention layout.projectDirectory.dir('../dev-run')
         }
         register('client') {
         }

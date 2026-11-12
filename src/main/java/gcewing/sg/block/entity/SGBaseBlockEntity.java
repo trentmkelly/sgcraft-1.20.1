@@ -561,6 +561,7 @@ public class SGBaseBlockEntity extends SyncedBlockEntity implements MenuProvider
                 ((SGBaseBlock) getBlockState().getBlock()).checkForMerge(level, worldPosition);
             else if (!isLinkedToController)
                 checkForLink();
+            updateIrisEntity();
             markChanged();
         }
         if (isMerged) {

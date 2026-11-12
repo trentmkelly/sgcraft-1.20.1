@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "sgcraft:block/cc_interface"
+    },
+    "facing=east": {
+      "model": "sgcraft:block/cc_interface",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "sgcraft:block/cc_interface",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "sgcraft:block/cc_interface",
+      "y": 270
+    }
+  }
+}

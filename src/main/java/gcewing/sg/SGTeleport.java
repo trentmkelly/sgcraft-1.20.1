@@ -7,7 +7,6 @@ import java.util.function.Function;
 import gcewing.sg.block.entity.SGBaseBlockEntity;
 import gcewing.sg.util.GateTransform;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.protocol.game.ClientboundSetEntityMotionPacket;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundSource;
@@ -77,9 +76,8 @@ public final class SGTeleport {
         if (entity instanceof ServerPlayer player) {
             if (player.level() != destLevel)
                 q = q.add(yawVector(a)); // as in the original, step clear of the gate after changing dimension
+            // Like the original, players keep their position and facing but not their velocity.
             player.teleportTo(destLevel, q.x, q.y, q.z, a, player.getXRot());
-            player.setDeltaMovement(u);
-            player.connection.send(new ClientboundSetEntityMotionPacket(player));
             return player;
         }
         if (entity.level() == destLevel) {

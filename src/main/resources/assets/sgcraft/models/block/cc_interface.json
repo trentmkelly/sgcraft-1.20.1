@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "sgcraft:block/cc_interface_side",
+    "down": "sgcraft:block/cc_interface_bottom",
+    "up": "sgcraft:block/cc_interface_top",
+    "north": "sgcraft:block/cc_interface_side",
+    "south": "sgcraft:block/cc_interface_front",
+    "west": "sgcraft:block/cc_interface_side",
+    "east": "sgcraft:block/cc_interface_side"
+  }
+}

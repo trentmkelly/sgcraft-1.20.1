@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "sgcraft:stargate_ring",
+    "sgcraft:stargate_chevron",
+    "sgcraft:stargate_base",
+    "sgcraft:stargate_controller",
+    "sgcraft:naquadah_block",
+    "sgcraft:naquadah_ore",
+    "sgcraft:power_unit",
+    {
+      "id": "sgcraft:cc_interface",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "computercraft"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "pattern": [
+          "SnS",
+          "SrS",
+          "SSS"
+        ],
+        "key": {
+          "S": {
+            "item": "minecraft:stone"
+          },
+          "n": {
+            "tag": "forge:ingots/naquadah_alloy"
+          },
+          "r": {
+            "item": "minecraft:redstone"
+          }
+        },
+        "result": {
+          "item": "sgcraft:cc_interface",
+          "count": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "sg_abort": {
+    "sounds": [
+      "sgcraft:sg_abort"
+    ],
+    "subtitle": "subtitles.sgcraft.sg_abort"
+  },
+  "sg_close": {
+    "sounds": [
+      "sgcraft:sg_close"
+    ],
+    "subtitle": "subtitles.sgcraft.sg_close"
+  },
+  "sg_dial7": {
+    "sounds": [
+      "sgcraft:sg_dial7"
+    ],
+    "subtitle": "subtitles.sgcraft.sg_dial7"
+  },
+  "sg_dial9": {
+    "sounds": [
+      "sgcraft:sg_dial9"
+    ],
+    "subtitle": "subtitles.sgcraft.sg_dial9"
+  },
+  "sg_open": {
+    "sounds": [
+      "sgcraft:sg_open"
+    ],
+    "subtitle": "subtitles.sgcraft.sg_open"
+  },
+  "iris_open": {
+    "sounds": [
+      "sgcraft:iris_open"
+    ],
+    "subtitle": "subtitles.sgcraft.iris_open"
+  },
+  "iris_close": {
+    "sounds": [
+      "sgcraft:iris_close"
+    ],
+    "subtitle": "subtitles.sgcraft.iris_close"
+  },
+  "iris_hit": {
+    "sounds": [
+      "sgcraft:iris_hit"
+    ],
+    "subtitle": "subtitles.sgcraft.iris_hit"
+  }
+}

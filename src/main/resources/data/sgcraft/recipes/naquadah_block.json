@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NNN",
+    "NNN",
+    "NNN"
+  ],
+  "key": {
+    "N": {
+      "tag": "forge:ingots/naquadah_alloy"
+    }
+  },
+  "result": {
+    "item": "sgcraft:naquadah_block",
+    "count": 1
+  }
+}

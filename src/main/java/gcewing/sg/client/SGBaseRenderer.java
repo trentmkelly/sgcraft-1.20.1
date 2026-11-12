@@ -266,6 +266,7 @@ public class SGBaseRenderer implements BlockEntityRenderer<SGBaseBlockEntity> {
             : RenderType.entityCutoutNoCull(EVENT_HORIZON_TEX);
         Quads q = new Quads(pose, buffers.getBuffer(type), light);
         q.uvScale(1, 1);
+        q.fixedNormal = new Vector3f(0, 0, 1);
         double[][] grid = te.getEventHorizonGrid()[0];
         double rclip = 2.5 * (te.irisIsClosed() ? te.getIrisAperture(t) : 1.0);
         for (int i = 1; i < ehGridRadialSize; i++)
@@ -302,6 +303,7 @@ public class SGBaseRenderer implements BlockEntityRenderer<SGBaseBlockEntity> {
         Matrix3f n;
         double u0, v0, su = textureScaleU, sv = textureScaleV;
         float r = 1, g = 1, b = 1;
+        Vector3f fixedNormal;
 
         Quads(PoseStack pose, VertexConsumer out, int light) {
             this.pose = pose;
@@ -341,7 +343,7 @@ public class SGBaseRenderer implements BlockEntityRenderer<SGBaseBlockEntity> {
         }
 
         void quad(double[] a, double[] b, double[] c, double[] d) {
-            Vector3f normal = faceNormal(a, b, c, d);
+            Vector3f normal = fixedNormal != null ? fixedNormal : faceNormal(a, b, c, d);
             vertex(a, normal);
             vertex(b, normal);
             vertex(c, normal);

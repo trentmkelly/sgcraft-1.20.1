@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "sgcraft:block/stargate_ring",
+    "down": "sgcraft:block/stargate_block",
+    "up": "sgcraft:block/stargate_block",
+    "north": "sgcraft:block/stargate_ring",
+    "south": "sgcraft:block/stargate_base_front",
+    "west": "sgcraft:block/stargate_ring",
+    "east": "sgcraft:block/stargate_ring"
+  }
+}
