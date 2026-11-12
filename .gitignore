@@ -6,6 +6,7 @@ out/
 # Forge dev runs
 run/
 runs/
+run-data/
 logs/
 
 # IDEs
@@ -17,7 +18,10 @@ logs/
 .classpath
 .project
 .settings/
+.metadata
 bin/
+eclipse/
+*.launch
 
 # OS
 .DS_Store

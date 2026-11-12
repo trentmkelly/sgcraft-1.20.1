@@ -1,0 +1,19 @@
+newmtl top
+Ka 0 0 0
+Kd 1 1 1
+map_Kd #top
+
+newmtl side
+Ka 0 0 0
+Kd 1 1 1
+map_Kd #side
+
+newmtl detail
+Ka 0 0 0
+Kd 1 1 1
+map_Kd #detail
+
+newmtl button
+Ka 0 0 0
+Kd 1 1 1
+map_Kd #button
